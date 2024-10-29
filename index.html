@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/images/logo/Logo-blue.png"
+    />
+    <title>Digital mantraaz</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="assets/fonts/font/flaticon_digitalmantraaz.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- <link rel="stylesheet" href="assets/css/responsive.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+
+      /* .customContainer{
+        height: 100vh;
+      } */
+
+       .text{
+            color: white;
+        }
+        .section-1,.section-2,.section-3{
+            overflow: hidden;
+            position: relative;
+            height: 100vh;
+            background-color: #000000;
+            
+        }
+        .heading{
+            font-size: 100px;
+        }
+        .division{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .division video {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 350px;
+            transform: translate(-21%,-35%);    
+        }
+        .div-container {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 53%;
+            transform: translate(-50%, -50%);
+            max-width: 470px;
+        }
+        .heading {
+            color: white;
+            filter: blur(0px);
+            will-change: filter;
+            font-size: 166px !important;
+            font-weight: 100;
+        }
+       .para{
+        line-height: 39px;
+        margin-top: 10px;
+        min-width: 340px;
+       }
+        /* .spacing{
+            height: 100vh;
+        } */
+
+        a.button {
+            color: white;
+            text-decoration: none;
+            text-wrap: nowrap !important;
+        }
+        .video-1{
+            scale: 1.5
+        }
+
+        .video-2{
+            rotate: -20deg;
+        }
+
+
+
+
+        /* media query  */
+@media only screen and (max-width:760px ){
+        .heading {
+            font-size: 60px !important;
+        }
+
+        .division video {
+    position: absolute;
+    width: 166px;
+    transform: translate(-21%,-35%);
+}
+
+.division .video-1 {
+    left: -30%;
+    top: 0;
+}
+.division .video-2 {
+    left: 30%;
+    top: 0;
+}
+.division .video-3 {
+    left: -40%;
+    top: 0;
+}
+
+
+    .div-container {
+        position: absolute;
+        left: 20%;
+        top: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        max-width: 470px;
+    }
+
+    
+
+}
+    </style>
+  </head>
+
+
+  <body>
+    <div id="preloader">
+      <video src="assets/videos/preloader.mp4" width="250px" autoplay muted loop></video>
+      <!-- <div class="spinner">
+      </div> -->
+    </div>
+   
+
+    <header class="demo demo1" id="navbar">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <img src="assets/images/logo/Logo-gold.png" alt="" width="100px">
+        </div>
+        <button class="navbar-toggler">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <ul class="navbar-nav">
+          <li class="nav-close">
+            <button class="btn-nav-close">
+              <span class="close-btn">+</span>
+            </button>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Services</a>
+            <ul class="dropdown">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Digital Marketing</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Web Development</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Advertisement Shoot</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Logo Desigining</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Works</a>
+            <ul class="dropdown">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Digital Marketing</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Web Development</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Testimonial</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Case Studies</a>
+          </li>
+        </ul>
+        <div class="navbar-utils">
+          <div class="utils-search">
+            <a href="" class="btn-2 me-1 hover-effect">Contact Us</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    
+    <!-- header  -->
+    <!-- main  -->
+    <main>
+      <div class="main-content" id="main-content">
+        <!-- banner  -->
+        <section> 
+          <div class="banner">
+            <video
+              src="assets/videos/video-2.mp4"
+              class="banner-video"
+              id="bannerVideo"
+              autoplay
+              muted 
+            ></video>
+            <div class="banner-text">
+              <h4 class="text-center text-light py-2 medium-text">
+                Think high
+              </h4>
+              <h2 class="text-center text-white py-2 large-text" style="
+      letter-spacing: 1px;">
+               Think digitally
+              </h2>
+              <p class="text-center text-light pt-2 pb-4 small-text">
+                Turn your brand to worldwide icons !!
+              </p>
+              <div class="calltobutton">
+                <a href="" class="gold-gradient text-dark me-1 ">Explore</a>
+                <a href="" class="btn-2 hover-effect">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- banner  -->
+        <!-- about  -->
+        <section>
+          <div
+            class="custom-container"
+            id="custom-container"
+            style="background: #000000"
+          >
+            <div class="text-white split-word">
+              Digital Mantraaz is an enthusiastic team of skilled individuals, each a genius in their own right! We create marketing strategies that connect with the target audience and make an impact that’s what we call sales.
+            </div>
+          </div>
+        </section>
+        <!-- about  -->
+
+         <!-- transition  -->
+         
+    <div class="parent">
+
+      <!-- <div class="spacing"></div> -->
+      
+      <div class=" section-1">
+          <div class="division division-1">
+              <video src="assets/videos/butterfly.mp4" autoplay loop muted class="video-1"></video>
+              <div class="div-container">
+                  <h1 class="heading heading-1">Design</h1>
+                  <p class="para para1">
+                      <span class="text">Lorem ipsum dolor sit amet consectetur</span>
+                      <span class="text">adipisicing elit. Lorem, ipsum dolor sit amet</span>
+                      <span class="text">consectetur adipisicing elit. Tempora, quos.</span>
+                  </p>
+                  <a class="button button-1">Learn More <svg class="" style="display:inline-block;vertical-align:middle" width="16" height="16" viewBox="0 0 1538 1024" xmlns="http://www.w3.org/2000/svg"><path style="fill:#fff" d="M1006.294 1024l-67.791-70.432 458.589-441.568-458.687-441.568 67.791-70.432 531.956 512z"></path><path style="fill:#fff" d="M1467.329 560.813h-1467.329v-97.822h1467.329z"></path></svg></a>
+              </div>
+          </div>
+      </div>
+      <div class=" section-2">
+          <div class="division division-2">
+          <video src="assets/videos/market.mp4" autoplay loop muted class="video-2"></video>
+          
+          <div class="div-container">
+              <h1 class="heading heading-2">Market</h1>
+              <p class="para para2">
+                  <span class="text">Lorem ipsum dolor sit amet consectetur</span>
+                  <span class="text">adipisicing elit. Lorem, ipsum dolor sit amet</span>
+                  <span class="text">consectetur adipisicing elit. Tempora, quos.</span>
+              </p>
+              <a class="button button-2">Learn More <svg class="" style="display:inline-block;vertical-align:middle" width="16" height="16" viewBox="0 0 1538 1024" xmlns="http://www.w3.org/2000/svg"><path style="fill:#fff" d="M1006.294 1024l-67.791-70.432 458.589-441.568-458.687-441.568 67.791-70.432 531.956 512z"></path><path style="fill:#fff" d="M1467.329 560.813h-1467.329v-97.822h1467.329z"></path></svg></a>
+          </div>
+      </div>
+      </div>
+      <div class=" section-3">
+          <div class="division division-3">
+          <video src="assets/videos/build.mp4" autoplay loop muted class="video-3"></video>
+              <div class="div-container">
+                  <h1 class="heading heading-3">Promote</h1>
+                  <p class="para para3">
+                      <span class="text">Lorem ipsum dolor sit amet consectetur</span>
+                      <span class="text">adipisicing elit. Lorem, ipsum dolor sit amet</span>
+                      <span class="text">consectetur adipisicing elit. Tempora, quos.</span>
+                  </p>
+                  <a class="button button-3">Learn More <svg class="" style="display:inline-block;vertical-align:middle" width="16" height="16" viewBox="0 0 1538 1024" xmlns="http://www.w3.org/2000/svg"><path style="fill:#fff" d="M1006.294 1024l-67.791-70.432 458.589-441.568-458.687-441.568 67.791-70.432 531.956 512z"></path><path style="fill:#fff" d="M1467.329 560.813h-1467.329v-97.822h1467.329z"></path></svg></a>
+              </div>
+         </div>
+      </div>
+      <!-- <div class="spacing"></div> -->
+      <!-- Repeat for other sections -->
+  </div>
+        
+        <!-- transition  -->
+
+
+
+      <!-- our story  -->
+      <section id="our-story" class="py-5 small-text">
+        <div class="container " style="max-width:900px ;">
+          <div class="row position-relative">
+            
+            <div class="col-12 col-md-7 d-flex justify-content-center align-items-center order-2 order-md-1 black-fade">
+              <div class="our-story py-3 w-100">
+                <h1 class="thin-heading">Our Story in a Flash</h1>
+                <p class="py-2">In a world filled with digital marketing agencies, Digital Mantraaz has over two decades of stories marked by expertise, laughter, challenges, tears, and success. Our primary focus is on what we bring to the table and how it benefits our clients. The point is, that marketing isn’t rocket science when you have the best team in the field.</p>
+                <a href="" class="btn-3 rounded-2 border-0 hover-effect">Learn more</a>
+              </div>
+            </div>
+              <div class="col-12 col-md-5 d-flex justify-content-center align-items-center order-1 order-md-2 our-story-image">
+                <img src="assets/images/dummy (1).jpg" alt="" class="w-100">
+              </div>
+            </div>
+          </div>
+        </section>
+      <!-- our story  -->
+
+
+
+
+      <!-- out services  -->
+       <section class="py-5 bg-light-gray">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-12">
+                <h1 class="text-dark thin-heading ps-3">Our Services </h1>
+            </div>
+            
+          </div>
+          <div class="row">
+            
+            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
+              <div class="custom-service-card  card border-0">
+                <img src="assets/images/dummy (2).jpg" alt="" class="w-100">
+                <div class="card-body custom-service-card-body">
+                  <h3><a href="">UI & UX Designing </a></h3>
+                  <p class="card-text line-clamp-1">Delivering an exceptional user experience is the most valuable thing a website or mobile application can offer. If we nail this, we've already won half the game. Fortunately, our web development team is filled with crazy game changers.</p>
+                  <a href="" class="btn-2 border-0 rounded-3 hover-effect">learn more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
+              <div class="custom-service-card  card border-0">
+                <img src="assets/images/dummy (2).jpg" alt="" class="w-100">
+                <div class="card-body custom-service-card-body">
+                  <h3><a href="">SEO </a></h3>
+                  <p class="card-text line-clamp-1">Being visible on search engines organically is incredibly attractive. Perfect keyword inclusion makes that goal achievable. Our content writers know exactly where and how to place and phrase keywords. After all, content is the language that connects the end user with the business.</p>
+                  <a href="" class="btn-2 border-0 rounded-3 hover-effect">learn more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
+              <div class="custom-service-card  card border-0">
+                <img src="assets/images/dummy (2).jpg" alt="" class="w-100">
+                <div class="card-body custom-service-card-body">
+                  <h3><a href="">SMM</a></h3>
+                  <p class="card-text line-clamp-1">Social media has become the first thing we notice upon waking up. Reaching consumers ' attention has become an easy thing. When used effectively, social media marketing can deliver jaw-dropping results in the form of increased sales</p>
+                  <a href="" class="btn-2 border-0 rounded-3 hover-effect">learn more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
+              <div class="custom-service-card  card border-0">
+                <img src="assets/images/dummy (2).jpg" alt="" class="w-100">
+                <div class="card-body custom-service-card-body">
+                  <h3><a href="">Website Development</a></h3>
+                  <p class="card-text line-clamp-1">Website development is often the first step businesses take to establish their online presence. Capturing users ' attention has become easier than ever. When done right, a well-designed website can deliver surprising results, boosting engagement and driving sales like never before. </p>
+                  <a href="" class="btn-2 border-0 rounded-3 hover-effect">learn more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
+              <div class="custom-service-card  card border-0">
+                <img src="assets/images/dummy (2).jpg" alt="" class="w-100">
+                <div class="card-body custom-service-card-body">
+                  <h3><a href="">E-Commerce</a></h3>
+                  <p class="card-text line-clamp-1">E-commerce has revolutionized the way we shop, becoming an essential part of our daily lives. When implemented correctly, a powerful e-commerce site can boost sales and provide an engaging shopping experience that keeps customers coming back.</p>
+                  <a href="" class="btn-2 border-0 rounded-3 hover-effect">learn more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
+              <div class="custom-service-card  card border-0">
+                <img src="assets/images/dummy (2).jpg" alt="" class="w-100">
+                <div class="card-body custom-service-card-body">
+                  <h3><a href="">E-Commerce</a></h3>
+                  <p class="card-text line-clamp-1">E-commerce has revolutionized the way we shop, becoming an essential part of our daily lives. When implemented correctly, a powerful e-commerce site can boost sales and provide an engaging shopping experience that keeps customers coming back.</p>
+                  <a href="" class="btn-2 border-0 rounded-3 hover-effect">learn more</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+      <!-- out services  -->
+
+
+
+        <!-- case studies  -->
+        <section class="my-5 ">
+          <div class="container">
+            <div class="row mb-4">
+              <div class="col-12">
+                  <h1 class="thin-heading ps-3">Case Studies</h1>
+              </div>
+              
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="custom-case-card card" style="width: 100%;border-radius: 10px;margin-top: 20px;">
+                  <img src="assets/images/dm-dummy.webp" alt="" class="w-100">
+                  <div class="card-body custom-case-card-body">
+                    <h3><a href="">Designing</a></h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="" class="btn-2 border-0 rounded-3 bg-transparent p-0 hover-effect">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+  
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="custom-case-card card" style="width: 100%;border-radius: 10px;margin-top: 20px;">
+                  <img src="assets/images/dm-dummy.webp" alt="" class="w-100">
+                  <div class="card-body custom-case-card-body">
+                    <h3><a href="">Designing</a></h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="" class="btn-2 border-0 rounded-3 bg-transparent p-0 hover-effect">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+  
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="custom-case-card card" style="width: 100%;border-radius: 10px;margin-top: 20px;">
+                  <img src="assets/images/dm-dummy.webp" alt="" class="w-100">
+                  <div class="card-body custom-case-card-body">
+                    <h3><a href="">Designing</a></h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="" class="btn-2 border-0 rounded-3 bg-transparent p-0 hover-effect">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+  
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="custom-case-card card" style="width: 100%;border-radius: 10px;margin-top: 20px;">
+                  <img src="assets/images/dm-dummy.webp" alt="" class="w-100">
+                  <div class="card-body custom-case-card-body">
+                    <h3><a href="">Designing</a></h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="" class="btn-2 border-0 rounded-3 bg-transparent p-0 hover-effect">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+  
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="custom-case-card card" style="width: 100%;border-radius: 10px;margin-top: 20px;">
+                  <img src="assets/images/dm-dummy.webp" alt="" class="w-100">
+                  <div class="card-body custom-case-card-body">
+                    <h3><a href="">Designing</a></h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="" class="btn-2 border-0 rounded-3 bg-transparent p-0 hover-effect">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         </section>
+        <!-- case studies  -->
+
+
+              <!-- out services  -->
+       <section class="py-5 pb-5 blue-bg">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-12 col-md-3">
+                <h1 class="text-white thin-heading ps-3">Clients</h1>
+            </div>
+            <div class="col-12 col-md-9 d-flex justify-content-end align-items-center">
+              <p class="text-white ps-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, voluptatibus!</p>
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 d-flex justify-content-center align-items-center ">
+              <img src="assets/images/brands/asnlogo.png" alt="" class="brand-logo">
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 d-flex justify-content-center align-items-center ">
+              <img src="assets/images/brands/asnlogo.png" alt="" class="brand-logo">
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 d-flex justify-content-center align-items-center ">
+              <img src="assets/images/brands/asnlogo.png" alt="" class="brand-logo">
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 d-flex justify-content-center align-items-center ">
+              <img src="assets/images/brands/asnlogo.png" alt="" class="brand-logo">
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 d-flex justify-content-center align-items-center ">
+              <img src="assets/images/brands/asnlogo.png" alt="" class="brand-logo">
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 d-flex justify-content-center align-items-center ">
+              <img src="assets/images/brands/asnlogo.png" alt="" class="brand-logo">
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 d-flex justify-content-center align-items-center ">
+              <img src="assets/images/brands/asnlogo.png" alt="" class="brand-logo">
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 d-flex justify-content-center align-items-center ">
+              <img src="assets/images/brands/asnlogo.png" alt="" class="brand-logo">
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 d-flex justify-content-center align-items-center ">
+              <img src="assets/images/brands/asnlogo.png" alt="" class="brand-logo">
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 d-flex justify-content-center align-items-center ">
+              <img src="assets/images/brands/asnlogo.png" alt="" class="brand-logo">
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 d-flex justify-content-center align-items-center ">
+              <img src="assets/images/brands/asnlogo.png" alt="" class="brand-logo">
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2 d-flex justify-content-center align-items-center ">
+              <img src="assets/images/brands/asnlogo.png" alt="" class="brand-logo">
+            </div>
+            
+          </div>
+          <div class="d-flex justify-content-center align-items-center my-4">
+            <button class="btn button-2 button hover-effect">
+              <span>View All Clients</span>
+            </button>
+          </div>
+        </div>
+       </section>
+      <!-- out services  -->
+
+
+
+      <!-- blogs  -->
+      <section class="bg-light-gray py-5">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-12">
+              <h1 class="ps-3">Blogs</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mt-3">
+              <div class="card bg-transparent border-0" style="width: 100%;">
+                <img src="assets/images/dm-dummy.webp" class="card-img-top custom-card-img-top" alt="...">
+                <div class="card-body bg-transparent">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span>
+                      <p>10 mins read</p>
+                    </span>
+                    <span>
+                      <p>20/10/2024</p>
+                    </span>
+                  </div>
+                  <h5 class="line-clamp blog-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mt-3">
+              <div class="card bg-transparent border-0" style="width: 100%;">
+                <img src="assets/images/dm-dummy.webp" class="card-img-top custom-card-img-top" alt="...">
+                <div class="card-body bg-transparent">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span>
+                      <p>10 mins read</p>
+                    </span>
+                    <span>
+                      <p>20/10/2024</p>
+                    </span>
+                  </div>
+                  <h5 class="line-clamp blog-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mt-3">
+              <div class="card bg-transparent border-0" style="width: 100%;">
+                <img src="assets/images/dm-dummy.webp" class="card-img-top custom-card-img-top" alt="...">
+                <div class="card-body bg-transparent">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span>
+                      <p>10 mins read</p>
+                    </span>
+                    <span>
+                      <p>20/10/2024</p>
+                    </span>
+                  </div>
+                  <h5 class="line-clamp blog-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- blogs  -->
+
+
+      <section  class="py-5 blue-gradient" style="background: radial-gradient(#193a69, #071932);">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-12 col-md-3">
+              <h1 class="text-light">Testimonials </h1>
+            </div>
+          </div>
+          <div class="swiper mySwiper-testimonial">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="reviews">
+                  <div class="review-image me-3">
+                    <img src="assets/images/brands/asnlogo.png" alt="">
+                  </div>
+                  <div class="review-content">
+                    <h2 class="text-white mt-3">Dinesh Kumar</h2>
+                    <p class="text-light">Outstanding service with the lowest rates I could find! I will definitely recommend them to my friends!</p>
+                  </div>
+              </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews">
+                  <div class="review-image me-3">
+                    <img src="assets/images/brands/asnlogo.png" alt="">
+                  </div>
+                  <div class="review-content">
+                    <h2 class="text-white mt-3">Dinesh Kumar</h2>
+                    <p class="text-light">Outstanding service with the lowest rates I could find! I will definitely recommend them to my friends!</p>
+                  </div>
+              </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews">
+                  <div class="review-image me-3">
+                    <img src="assets/images/brands/asnlogo.png" alt="">
+                  </div>
+                  <div class="review-content">
+                    <h2 class="text-white mt-3">Dinesh Kumar</h2>
+                    <p class="text-light">Outstanding service with the lowest rates I could find! I will definitely recommend them to my friends!</p>
+                  </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+
+
+      <section id="our-story" class="py-5 small-text bg-light-gray" >
+        <div class="container" style="max-width:800px ;">
+          <div class="row ">
+            
+            <div class="col-12 col-md-7 d-flex justify-content-center align-items-center order-2 order-md-1 ">
+              <div class="our-story py-3 w-100">
+                <h1 class="thin-heading">You Will Like it Here! </h1>
+                <p class="py-2">Who wouldn’t want to work in the coolest and most vibrant workplace? We don’t judge—seize your opportunities by tapping the button.</p>
+                <a href="" class="btn-3 rounded-2 border-0">Career opportunities <i class="fa-solid fa-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+              <div class="col-12 col-md-5 d-flex justify-content-center align-items-center order-1 order-md-2">
+                <div class="swiper mySwiper3">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide custom-swiper-slide ">
+                      <img src="assets/images/career.png" alt="" class="w-100">
+                    </div>
+                    <div class="swiper-slide custom-swiper-slide ">
+                      <img src="assets/images/career.png" alt="" class="w-100">
+                    </div>
+                    <div class="swiper-slide custom-swiper-slide ">
+                      <img src="assets/images/career.png" alt="" class="w-100">
+                    </div>
+                    <div class="swiper-slide custom-swiper-slide ">
+                      <img src="assets/images/career.png" alt="" class="w-100">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="my-5">
+          <div class="container" style="max-width:800px ;">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Do you offer customized digital marketing solutions?
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><p>Yes, our team creates customized strategies addressing your unique business goals, target audience, and market landscape.</p></div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    What are the details of your packages?
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><p> This is a common question we receive. The package details depend on the specific services you choose to sign up for. Feel free to reach out to us so we can understand your needs and provide you with the exact pricing from our representative.</p></div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Can you help me manage my social media presence? 
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><p> Yes, our social media services include profile setup, content creation, posting schedules, engagement strategies, and analytics reporting.</p></div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    How do you measure the success of digital marketing campaigns? 
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><p>Success is measured through metrics such as website traffic, engagement, conversion rates, lead generation, and return on investment (ROI), using tools like Google Analytics.</p></div>
+                </div>
+              </div>
+
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    How long does it take to see results from digital marketing efforts?
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><p>Results vary depending on the strategy, industry, and competition. SEO typically takes 3-6 months, while PPC and social media can yield faster results. </p></div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                    How does SEO (Search Engine Optimization) work? 
+                  </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><p>SEO optimizes your website to rank higher in search engine results pages (SERPs) through keyword research, on-page optimization, and link building, increasing visibility and driving organic traffic.</p></div>
+                </div>
+              </div>
+
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    What is PPC (Pay-Per-Click) advertising? 
+                  </button>
+                </h2>
+                <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><p>PPC advertising involves creating and publishing online ads, paying only when users click, typically through platforms like Google Ads or Facebook Ads.</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingEight">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                    What is content marketing? 
+                  </button>
+                </h2>
+                <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><p>Content marketing involves creating and distributing valuable, relevant content to attract and retain a clearly defined audience, driving profitable customer action.</p></div>
+                </div>
+              </div>
+
+              
+
+
+
+
+
+
+
+            </div>
+        </div>
+        </section>
+
+        <section class="py-5 bg-light-gray">
+          <div class="container py-5" style="max-width: 800px;">
+                <div class="row">
+                  <div class="col-12 col-md-6 wow-customer-div">
+                    <h1 class="medium-text wow-customer">
+                      Wany to WOW Your Customers ?
+                    </h1>
+                    <p class="my-md-5 mb-4 mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, at!</p>
+                    <h1><a class="medium-text my-3" href="tel:800 2345 2344">800 2345 2344</a></h1>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <form class="row g-3" id="customer">
+                      <div class="col-12 col-md-6">
+                        <label for="inputName" class="form-label" required>Your Name</label>
+                        <input type="text" class="form-control" id="inputName">
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <label for="inputEmail4" class="form-label">Email ID</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                      </div>
+                      <div class="col-12 col-md-12">
+                        <label for="inputPhone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="inputPhone">
+                      </div>
+                      <div class="col-12 col-md-12">
+                        <label for="inputWebsite" class="form-label">Website</label>
+                        <input type="tel" class="form-control" id="inputWebsite">
+                      </div>
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Accept terms and conditions *
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button class="btn-2 border-0 rounded-3">learn more</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+          </div>
+        </section>
+       
+        
+        
+      </div>
+    </main>
+    <!-- main  -->
+    <!-- footer  -->
+    <footer class="footer--light">
+      <div class="footer-big">
+        <!-- start .container -->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer-widget">
+                <div class="widget-about">
+                  <img  src="assets/images/logo/Logo-gold.png" alt="" style="width: 150px;" >
+                  <p>There are many variations of users of YouTube available.</p>
+                  <ul class="contact-details">
+                    <li>Call Us :
+                     
+                      <a href="tel:+91 98840 84850" class="text-light">+91 98840 84850</a>
+                    </li>
+                    <li>
+                      <i class="fas fa-envelope-open-text"></i>
+                      <a href="mailto:info@digitalmantraaz.com" class="text-light">info@digitalmantraaz.com</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+            <!-- end /.col-lg-4 -->
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer-widget">
+                <div class="footer-menu">
+                  <h4 class="footer-widget-title">Popular Category</h4>
+                  <ul>
+                    <li>
+                      <a href="#">WordPress Theme</a>
+                    </li>
+                    <li>
+                      <a href="#">Bootstrap Template</a>
+                    </li>
+                    <li>
+                      <a href="#">ReactJS Template</a>
+                    </li>
+                    <li>
+                      <a href="#">Dashboard Theme</a>
+                    </li>
+                    <li>
+                      <a href="#">HTML5 Template</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- end /.col-lg-3 -->
+  
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer-widget">
+                <div class="footer-menu">
+                  <h4 class="footer-widget-title">Our Company</h4>
+                  <ul>
+                    <li>
+                      <a href="#">About Us</a>
+                    </li>
+                    <li>
+                      <a href="#">How It Works</a>
+                    </li>
+                    <li>
+                      <a href="#">Affiliates</a>
+                    </li>
+                    <li>
+                      <a href="#">Testimonials</a>
+                    </li>
+                    <li>
+                      <a href="#">Contact Us</a>
+                    </li>
+                    <li>
+                      <a href="#">Plan & Pricing</a>
+                    </li>
+                    <li>
+                      <a href="#">Blog</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- end /.col-lg-3 -->
+  
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer-widget">
+                <div class="footer-menu p-0">
+                  <h4 class="footer-widget-title">Help Support</h4>
+                  <ul>
+                    <li>
+                      <a href="#">Support Forum</a>
+                    </li>
+                    <li>
+                      <a href="#">Terms & Conditions</a>
+                    </li>
+                    <li>
+                      <a href="#">Support Policy</a>
+                    </li>
+                    <li>
+                      <a href="#">FAQs</a>
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+              
+            </div>
+            
+  
+          </div>
+          
+        </div>
+        
+      </div>
+      
+  
+      <div class="mini-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="copyright-text">
+                <p>© 2024
+                  <a href="#">Digital Mantraaz</a>. All rights reserved. Created by
+                  <a href="#">Digital Mantraaz</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div><br></div>
+
+
+    <!-- footer  -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="assets/js/main.js"></script>
+<!-- old script comes here  -->
+
+    <script>
+
+
+let typeSplit;
+
+// Split the text up
+function runSplit() {
+  typeSplit = new SplitType(".split-word", {
+    types: "lines, words",
+  });
+  $(".word").append("<div class='line-mask'></div>");
+  createAnimation();
+}
+
+runSplit();
+
+// Register GSAP plugins
+gsap.registerPlugin(ScrollTrigger);
+
+// Create staggered animation
+
+function createAnimation() {
+  let allMasks = $(".word")
+    .map(function () {
+      return $(this).find(".line-mask");
+    })
+    .get();
+
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".split-word",
+      start: "top 25%",
+      end: "bottom 100%",
+      scrub: 1,
+      pin: true,
+    },
+  });
+
+  tl.to(allMasks, {
+    duration: 3,
+    stagger: 1,
+    opacity: 0,
+  })
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let sections = gsap.utils.toArray(".custom-case-card");
+
+// gsap.to(sections, {
+//   xPercent: -110 * (sections.length - 1),
+//   ease: "none",
+//   scrollTrigger: {
+//     trigger: ".customContainer",
+//     pin: true,
+//     scrub: 1.5,
+//     start:'top 35%',
+//     snap: 1 / (sections.length - 1),
+//     end: () => "+=" + document.querySelector(".customContainer").offsetWidth
+//   }
+// });
+
+var swiper = new Swiper(".mySwiper-testimonial", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      item:2,
+      centeredSlides: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+     
+    });
+
+    var swiper3 = new Swiper(".mySwiper3", {
+      speed: 1000,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: true,
+      },
+      grabCursor: true,
+      effect: "creative",
+      creativeEffect: {
+        prev: {
+          shadow: true,
+          translate: ["-20%", 0, -1],
+        },
+        next: {
+          translate: ["100%", 0, 0],
+        },
+      },
+    });
+
+ 
+
+
+
+    // navigatrion 
+
+    /* Navbar toggler */
+const toggleBtn = document.querySelector(".navbar-toggler");
+const navbarNav = document.querySelector(".navbar-nav");
+const navCloseBtn = document.querySelector(".btn-nav-close");
+
+toggleBtn.addEventListener("click", () => {
+	navbarNav.classList.toggle("active");
+});
+navCloseBtn.addEventListener("click", () => {
+	navbarNav.classList.remove("active");
+});
+
+/* Search popup */
+// const searchBtn = document.querySelector(".btn-search");
+// const searchBtnClose = document.querySelector(".btn-search-close");
+// const searchPopup = document.querySelector(".search-popup");
+
+// searchBtn.addEventListener("click", () => {
+// 	searchPopup.classList.toggle("active");
+// });
+// searchBtnClose.addEventListener("click", () => {
+// 	searchPopup.classList.remove("active");
+// });
+
+/* Add icon on .nav-item if dropdown exists */
+const navItems = document.querySelectorAll(".nav-item");
+
+navItems.forEach((item) => {
+	const hasDropdowns = item.querySelector(".dropdown") !== null;
+	if (hasDropdowns) {
+		item.classList.add("icon");
+	}
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", (event) => {
+
+window.addEventListener('resize', function() {
+    // Refresh the ScrollTrigger to recalculate positions
+    ScrollTrigger.refresh();
+});
+
+gsap.registerPlugin(ScrollTrigger);
+
+function getScrollTriggerStart() {
+            return window.innerWidth <= 768 ? 'top top' : 'top top'; // Adjust breakpoint as needed
+        }
+function letterSpacing() {
+            return window.innerWidth <= 768 ? '1px' : '-10px'; // Adjust breakpoint as needed
+        }
+
+var timeline1 = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.section-1',
+        start: getScrollTriggerStart(),
+        end: '+=2500',
+        pin: true,
+        scrub: true,
+        invalidateOnRefresh: true
+    }
+});
+
+// Group animations for .video-1 and .heading-1 to run simultaneously
+timeline1.fromTo('.video-1', 
+    { opacity: 0, x: 130.165, scale:0.8,y:'-60%',duration: 5 }, 
+    { opacity: 1, transformOrigin: 'left' , duration: 5 ,x: 130.165,scale:1.5,y:'-60%' }
+);
+
+// Start heading animation simultaneously with video animation
+timeline1.fromTo('.heading-1', 
+    { opacity: 0, filter: "blur(6px)", letterSpacing:'-23px', transformOrigin: 'left' }, 
+    { opacity: 1, filter: "blur(0px)", letterSpacing:letterSpacing(),  duration: 1 },
+    0 
+);
+
+
+timeline1.fromTo('.para1 .text', 
+    { 
+      opacity: 0, 
+      transform:'rotateY(20px)',
+      transformOrigin:"left"
+
+    }, // Initial state
+    {
+        opacity: 1,
+        transform:'rotateY(20px)',
+        duration: 0.5,
+        stagger: 0.1,
+        // ease: "power1.out"
+    }, 0.5
+);
+
+timeline1.fromTo('.button-1', 
+    { opacity: 0, filter: "blur(4px)" }, 
+    { opacity: 1, filter: "blur(0px)", duration: 1 }, 
+    0 // Start at the same time
+);
+
+
+timeline1.to('.division-1', 
+    { opacity: 0, duration: 5 }, 
+    "+=1" 
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var timeline2 = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.section-2',
+        start: getScrollTriggerStart(),
+        end: '+=2500',
+        pin: true,
+        scrub: true,
+        invalidateOnRefresh: true
+    }
+});
+
+// Group animations for .video-1 and .heading-1 to run simultaneously
+timeline2.fromTo('.video-2', 
+    { opacity: 0 ,y:'-50%',duration: 3  ,filter: "blur(6px)",}, 
+    { opacity: 1, transformOrigin: 'center' , duration: 3,x: 0 ,y:'-75%',rotation:0 ,filter: "blur(0px)",}
+);
+
+timeline2.to('.video-2', 
+    { x: 0 ,y:'-75%', duration: 3 }, 
+    1 
+);
+
+// Start heading animation simultaneously with video animation
+timeline2.fromTo('.heading-2', 
+    { opacity: 0, filter: "blur(6px)", letterSpacing:'-23px', transformOrigin: 'left' }, 
+    { opacity: 1, filter: "blur(0px)", letterSpacing:letterSpacing(),  duration: 1 },
+    0 
+);
+
+
+
+
+timeline2.fromTo('.para2 .text', 
+    { 
+      opacity: 0, 
+      transform:'rotateY(20px)',
+      transformOrigin:"left"
+
+    }, // Initial state
+    {
+        opacity: 1,
+        transform:'rotateY(20px)',
+        duration: 0.5,
+        stagger: 0.1,
+        // ease: "power1.out"
+    }, 0
+);
+
+timeline2.fromTo('.button-2', 
+    { opacity: 0, filter: "blur(4px)" }, 
+    { opacity: 1, filter: "blur(0px)", duration: 1 }, 
+    0 // Start at the same time
+);
+
+
+timeline2.to('.division-2', 
+    { opacity: 0, duration: 5 }, 
+    "+=1" 
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var timeline3 = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.section-3',
+        start: getScrollTriggerStart(),
+        end: '+=2500',
+        pin: true,
+        scrub: true,
+        invalidateOnRefresh: true
+    }
+});
+
+// Group animations for .video-1 and .heading-1 to run simultaneously
+timeline3.fromTo('.video-3', 
+    { opacity: 0, scale: 1 ,filter: "blur(6px)", x: 141.165 }, 
+    { opacity: 1, transformOrigin: 'right' ,filter: "blur(0px)", duration: 3}
+);
+
+timeline3.to('.video-3', 
+    { x: 141.165, scale: 1, duration: 3 }, 
+    1 
+);
+
+// Start heading animation simultaneously with video animation
+timeline3.fromTo('.heading-3', 
+    { opacity: 0, filter: "blur(6px)", letterSpacing:'-23px', transformOrigin: 'left' }, 
+    { opacity: 1, filter: "blur(0px)", letterSpacing:letterSpacing(),  duration: 1 },
+    0 
+);
+
+
+
+
+timeline3.fromTo('.para3 .text', 
+    { 
+      opacity: 0, 
+      transform:'rotateY(20px)',
+      transformOrigin:"left"
+
+    }, // Initial state
+    {
+        opacity: 1,
+        transform:'rotateY(20px)',
+        duration: 0.5,
+        stagger: 0.1,
+        // ease: "power1.out"
+    }, 0
+);
+
+timeline3.fromTo('.button-3', 
+    { opacity: 0, filter: "blur(4px)" }, 
+    { opacity: 1, filter: "blur(0px)", duration: 1 }, 
+    0 
+);
+
+
+timeline3.to('.division-3', 
+    { opacity: 0, duration: 5 }, 
+    "+=1" 
+);
+
+
+//  document.addEventListener('scroll', () => {
+//         var division1 = document.querySelector('.division-1');
+//         var division2 = document.querySelector('.division-2');
+//         var division3 = document.querySelector('.division-3');
+
+        
+//         if (division1.style.opacity === '1') {
+//                 division1.style.opacity = '0';
+//             }
+        
+//         if (division2.style.opacity === '1') {
+//                 division2.style.opacity = '0';
+//             }
+        
+//         if (division3.style.opacity === '1') {
+//                 division3.style.opacity = '0';
+//             }
+//         });
+
+
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+   
+   
+  </body>
+</html>
+

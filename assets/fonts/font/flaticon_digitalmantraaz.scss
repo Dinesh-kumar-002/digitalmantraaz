@@ -1,0 +1,45 @@
+$flaticon_digitalmantraaz-font: "flaticon_digitalmantraaz";
+
+@font-face {
+    font-family: $flaticon_digitalmantraaz-font;
+    src: url("./flaticon_digitalmantraaz.woff2?cbffc8d968c6575d02fc35c503ab12c2") format("woff2"),
+url("./flaticon_digitalmantraaz.woff?cbffc8d968c6575d02fc35c503ab12c2") format("woff"),
+url("./flaticon_digitalmantraaz.eot?cbffc8d968c6575d02fc35c503ab12c2#iefix") format("embedded-opentype"),
+url("./flaticon_digitalmantraaz.ttf?cbffc8d968c6575d02fc35c503ab12c2") format("truetype"),
+url("./flaticon_digitalmantraaz.svg?cbffc8d968c6575d02fc35c503ab12c2#flaticon_digitalmantraaz") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_digitalmantraaz !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_digitalmantraaz-map: (
+    "menu": "\f101",
+    "mail-inbox-app": "\f102",
+    "telephone-call": "\f103",
+    "search-interface-symbol": "\f104",
+    "hamburger-menu": "\f105",
+);
+
+.flaticon-menu:before {
+    content: map-get($flaticon_digitalmantraaz-map, "menu");
+}
+.flaticon-mail-inbox-app:before {
+    content: map-get($flaticon_digitalmantraaz-map, "mail-inbox-app");
+}
+.flaticon-telephone-call:before {
+    content: map-get($flaticon_digitalmantraaz-map, "telephone-call");
+}
+.flaticon-search-interface-symbol:before {
+    content: map-get($flaticon_digitalmantraaz-map, "search-interface-symbol");
+}
+.flaticon-hamburger-menu:before {
+    content: map-get($flaticon_digitalmantraaz-map, "hamburger-menu");
+}
