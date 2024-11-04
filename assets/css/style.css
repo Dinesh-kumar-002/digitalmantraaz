@@ -75,8 +75,9 @@ a{
     letter-spacing: 1px;
 }
 .btn-2:hover{
-    color: white;
+    color: var(--bg-blue);
     border:1px solid transparent;
+    background-color: white;
 }
 
 
@@ -149,6 +150,9 @@ a{
     }
 }
 @media only screen and (max-width:620px) {
+    /* .branding-banner {
+        height: 30vh !important;
+    } */
     .social-links{
         display: none ;
     }
@@ -186,7 +190,7 @@ a{
 .word {
     position: relative;
     font-size: 40px;
-    font-weight: 100;
+    font-weight: 200;
     letter-spacing: 1px;
     padding: 0 3px;
 }
@@ -213,21 +217,23 @@ a{
 
 
   .custom-container .split-word {
-    max-width: 630px;
+    max-width: 1000px;
     /* min-width: 340px;
     margin: 40px; */
 }
 
 
 
-
+.large-text-gradient{
+  text-shadow: rgba(227,165,59,1) 0px 0px 192px;
+}
 
 .large-text{
-    text-shadow: rgba(227,165,59,1) 0px 0px 192px;
+   
     font-size: 100px;
     font-weight: 700;
 }
-    @media only screen and (max-width:990px)and (min-width:768px) {
+    @media only screen and (max-width:990px) and (min-width:768px) {
         
         .large-text{
             font-size: 65px;
@@ -343,7 +349,8 @@ a{
 .custom-service-card-body h3 a {
   text-decoration: none;
   color: black;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 25px;
 }
 
 /* services card */
@@ -360,7 +367,7 @@ a{
 
 .custom-case-card-body {
     position: absolute;
-    bottom: 0;
+    bottom: -55px;
     background: linear-gradient(358deg, #000000, #ffffff00);
     left: 0;
     transition: bottom 300ms;
@@ -371,15 +378,21 @@ a{
     align-items: start;
 }
 .custom-case-card-body h3 a{
-    color: rgb(255, 255, 255);
-    text-decoration: none
+  color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 30px;
 }
 .custom-case-card-body h3 {
     padding-bottom: 11px;
-}
-.custom-case-card-body p{
+  }
+  .custom-case-card-body p{
     color: rgb(255, 255, 255);
     
+}
+
+.custom-case-card:hover .custom-case-card-body{
+  bottom: 0px;
+  
 }
 
 /* .custom-case-card:hover .custom-case-card-body{
@@ -401,12 +414,11 @@ a{
       border-radius: 19px !important;
       flex: 0 0 auto;
       margin: 15px;
-      max-width: 374px;
-      min-width: 346px;
+      height: 330px;
   }
 .custom-case-card img{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     object-fit: cover;
 }
 
@@ -546,10 +558,10 @@ a{
     background-color: white;
     transition: 400ms background-color;
   }
-  header.scrolled .nav-item a{
-    color: black;
-    font-weight: 500;
-  }
+  header.scrolled .nav-item a {
+    color: #08244d;
+    font-weight: 780;
+}
  
   
 
@@ -564,6 +576,14 @@ a{
 
   
   /* Nav doc CSS */
+
+
+  
+  @media only screen and (max-width:767px){
+    .dropdown{
+      
+    }    
+  }
   .navbar-doc table {
     border-collapse: collapse;
     width: 100%;
@@ -802,9 +822,11 @@ a{
     box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.15);
 }
   .nav-item .dropdown .nav-link {
-    color: #000000;
-    font-weight: 600;
+    
+    color: #08244d;
+    font-weight: 780;
   }
+  
   .nav-item .dropdown .dropdown {
     top: 0;
     left: calc(100% + 20px);
@@ -1469,12 +1491,14 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   overflow: hidden;
 }
-/* .division{
-  position: relative;
+.division{
+  /* position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
-} */
+  align-items: center; */
+  background-color: black;
+}
+
 .division img{
   position: absolute; 
   top: 50%;
@@ -1539,7 +1563,7 @@ body::-webkit-scrollbar-thumb {
 }
 .accordion-button::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='12' y1='5' x2='12' y2='19'/%3E%3Cline x1='5' y1='12' x2='19' y2='12'/%3E%3C/svg%3E") !important;
-  background-color: #f1f1f1;
+  /* background-color: #f1f1f1; */
   width: 25px;
   height: 25px;
   background-position: center;
@@ -1547,5 +1571,98 @@ body::-webkit-scrollbar-thumb {
 }
 .accordion-button:not(.collapsed)::after{
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'/%3E%3C/svg%3E") !important;
+  
+}
+
+.branding-banner{
+  overflow: hidden;
+  margin-top: 90px;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-blue);
+  position: relative;
+}
+/* .branding-banner::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(91, 91, 91);
+  z-index: 0;
+  
+} */
+
+.branding-banner .branding-text{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  text-align: center;
+  color: white;
+  
+}
+.floating-banner-image{
+  width: 18%;
+  position: absolute;
+  max-width: 220px;
+  min-width: 220px;
+  filter: brightness(0.4);
+  transition: top 5s, left 5s, right 5s, bottom 5s; 
+}
+.floating-banner-image.img-1.anime{
+  top: 10%  !important;
+  left: 10% !important;
+  
+}
+.floating-banner-image.img-2.anime{
+  top: 13%  !important;
+  left: 30% !important;
+  
+}
+.floating-banner-image.img-3.anime{
+  top: 30%  !important;
+  left: 60% !important;
+  
+}
+.floating-banner-image.img-4.anime{
+  top: 10%  !important;
+  right: 18% !important;
+  
+}
+.floating-banner-image.img-5.anime{
+  top: 10%  !important;
+  left: 10% !important;
+  
+}
+.floating-banner-image.img-6.anime{
+  top: 40%  !important;
+  left: 20% !important;
+  
+}
+.floating-banner-image.img-7.anime{
+  top: 7%  !important;
+  right: 40% !important;
+  
+}
+.floating-banner-image.img-8.anime{
+  bottom: 10% !important;
+  left: 10% !important;
+  
+}
+.floating-banner-image.img-9.anime{
+  bottom: 10% !important;
+  left: 30% !important;
+  
+}
+.floating-banner-image.img-10.anime{
+  bottom: 15% !important;
+  right: 30% !important;
+  
+}
+.floating-banner-image.img-11.anime{
+  bottom: 10% !important;
+  right: 10% !important;
   
 }
