@@ -150,9 +150,7 @@ a{
     }
 }
 @media only screen and (max-width:620px) {
-    /* .branding-banner {
-        height: 30vh !important;
-    } */
+   
     .social-links{
         display: none ;
     }
@@ -1665,4 +1663,11 @@ body::-webkit-scrollbar-thumb {
   bottom: 10% !important;
   right: 10% !important;
   
+}
+
+
+@media only screen and (max-width:767px){
+  .branding-banner{
+    height: 90vh;
+  }
 }
